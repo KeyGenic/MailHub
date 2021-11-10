@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    overflow-x: hidden;
+}
 
 .ham::before,
 .ham::after{
@@ -69,4 +72,30 @@
 
 .swiper-pagination-bullet-active{
     background-color: #3b82f4 !important;
+}
+
+@media  screen and (min-width:1350px) {
+   header{
+       margin: auto;
+       max-width: 1440px;
+   }
+   #convert-section{
+    margin: auto;
+    max-width: 1440px;
+   }
+   #testimonials{
+    margin: auto;
+    max-width: 1440px;
+    margin-top: 15rem;
+   }
+   #pricing{
+    margin: auto;
+    max-width: 1440px;
+    margin-top: 15rem;
+   }
+   footer{
+    margin: auto;
+    max-width: 1440px;
+    margin-top: 15rem;
+   }
 }

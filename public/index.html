@@ -22,29 +22,29 @@
     <title>MailHub</title>
 </head>
 <body>
-    <header class="">
+    <header>
         <div class="cover absolute bottom-0 right-0 left-0 top-0 w-full transform -skew-y-6  origin-top-left bg-myGrey mb-10" ></div>
-    <div class="p-5 h-36 z-10 relative lg:p-16">
+    <div class="p-5 h-36 z-10 relative lg:p-16 ">
         <h1 class="font-bold text-#000 text-4xl font-Lobster">MailHub</h1>
-        <div class="flex justify-center items-center w-8 h-8 border-2 border-transparent border-solid float-right mr-5 -mt-8 ">
-            <div class=" bg-black w-6 h-1 rounded ham "></div>
+        <div id="hamburger" class="flex justify-center items-center  cursor-pointer w-8 h-8 border-2 border-transparent border-solid float-right mr-5 -mt-8 lg:hidden ">
+            <div class=" bg-black w-6 h-1 rounded ham transition-all "></div>
         </div>
-        <nav class="flex items-center justify-center mt-10 bg-white h-40 rounded transform relative bottom-72 ">
-            <ul class="mt-1">
-                <li><button class="font-bold font-lato text-myBlue border-myBlue border-solid border-2 p-2 rounded-3xl w-40">Member Login</button></li>
+        <nav class="flex items-center justify-center mt-10  z-1 bg-white h-40 rounded transform relative bottom-72 lg:bg-transparent lg:bottom-0  ">
+            <ul class="mt-1 transition-all lg:flex lg:absolute right-0 -top-32 lg:m-5 ">
+                <li><button class="font-bold font-lato text-myBlue border-myBlue border-solid border-2 p-2 rounded-3xl w-40 lg:mt-5 lg:mr-5 ">Member Login</button></li>
                 <li><button class="text-white font-lato bg-myBlue  border-transparent border-2 p-2 rounded-3xl w-40 mt-5">14-day trial</button></li>
             </ul>
         </nav>
     </div>
-    <div id="hero-section" class="p-5 z-10 relative lg:p-16">
-        <img src="../src/ASSETS/IMG-1.png" alt="" class="lg:float-right">
+    <div id="hero-section" class="p-5 relative lg:p-16">
+        <img src="../src/ASSETS/IMG-1.png" alt="illu" class="lg:float-right">
         <h1 class="font-bold font-Montserrat text-4xl sm:text-5xl lg:text-4xl">The Fun & Dublicable Way to Build Your Herbalife Business</h1>
         <p class="text-#000 font-lato font-bold mt-5 sm:text-2xl">Get all the tools you need to prospect,present,follow up and duplicate in one place</p>
         <button class="text-white font-lato bg-myBlue  border-transparent border-2 p-2 rounded-3xl w-40 mt-10">14-day trial</button>
     </div>
     </header>
-    <div id="convert-section" class="p-5 mt-10 lg:relative top-32 flex w-full">
-        <div class="flex-1">
+    <div id="convert-section" class="p-5 mt-10 lg:relative lg:top-32 lg:flex lg:w-full">
+        <div class="lg:flex-1">
         <img src="../src/ASSETS/img-2.svg" alt="">
         </div>
         <div class="lg:w-50 flex-1 mt-10">
@@ -60,10 +60,10 @@
             <a href="#" class="font-bold font-Montserrat text-myBlue underline  relative top-5 ">Learn More</a>
         </div>
     </div>
-    <div id="testimonials" class=" mt-10 h-5/6" >
-        <div class="p-5">
-            <h1 class="font-bold font-Montserrat text-2xl">What Our Users are Saying</h1>
-            <p class="text-#000 font-lato font-bold mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic perspiciatis distinctio nam id laboriosam natus molestiae veniam autem, adipisci expedita sint doloribus ratione cumque aut? Ratione ullam debitis at dolorem!</p>
+    <div id="testimonials" class=" mt-10 h-5/6 lg:mt-60" >
+        <div class="p-5 lg:p-16">
+            <h1 class="font-bold font-Montserrat text-2xl lg:text-3xl">What Our Users are Saying</h1>
+            <p class="text-#000 font-lato font-bold mt-5 lg:w-2/4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic perspiciatis distinctio nam id laboriosam natus molestiae veniam autem, adipisci expedita sint doloribus ratione cumque aut? Ratione ullam debitis at dolorem!</p>
         </div>
         <div class="swiper">
             <div class="swiper-wrapper ">
@@ -115,10 +115,11 @@
             <div class="swiper-pagination" style="position: unset;"></div>
         </div>
     </div>
-    <div id="pricing" class="flex flex-col text-center items-center mt-10">
-        <h1 class="font-bold text-2xl">Ready to get Started? </h1>
+    <div id="pricing" class="text-center mt-10 lg:mt-60">
+        <h1 class="font-bold text-2xl lg:text-3xl">Ready to get Started? </h1>
         <p class="font-lato mt-5 mb-10">Try out all of the Marketing tools 14 days for just $1</p>
-        <div class="shadow ">
+        <div class="flex flex-col items-center lg:flex-row justify-center">
+        <div class="shadow lg:mr-5 ">
             <div class="rounded  text-white p-5">
                 <h3 class="font-bold text-black ">LifeTime</h3>
                 <h1 class="text-bold text-Montserrat text-2xl text-myBlue">FREE</h1>
@@ -132,7 +133,7 @@
             </div>
             <button class="text-myBlue font-lato border-myBlue  border-transparent border-2 p-2 rounded-3xl w-40 mt-10 mb-10">Free</button>
         </div>
-        <div class="shadow mt-10 ">
+        <div class="shadow mt-10 lg:mr-5 ">
             <div class="rounded bg-myBlue text-white p-5">
                 <h3>Annual</h3>
                 <h1 class="text-bold text-Montserrat text-2xl">$269.99 <span class="font-lato">/Year</span></h1>
@@ -178,11 +179,12 @@
                     <li>Advanced Marketing Tools</li>
                 </ul>
             </div>
-            <button class="text-white font-lato bg-myBlue  border-transparent border-2 p-2 rounded-3xl w-40 mt-10 mb-10">14-day trial</button>
+            <button class="text-myBlue font-lato  border-myBlue  border-transparent border-2 p-2 rounded-3xl w-40 mt-10 mb-10">14-day trial</button>
         </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto totam dolore itaque expedita aspernatur dolorum quidem suscipit quod molestias sapiente exercitationem assumenda explicabo nostrum fuga, pariatur numquam quisquam obcaecati atque?</p>
+        </div>
+        <p class="lg:p-32 lg:text-2xl mt-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto totam dolore itaque expedita aspernatur dolorum quidem suscipit quod molestias sapiente exercitationem assumenda explicabo nostrum fuga, pariatur numquam quisquam obcaecati atque?</p>
     </div>
-    <footer class="mt-10 bg-myGrey text-center">
+    <footer class="mt-10 bg-myGrey text-center w-screen">
         <h3 class="pt-5 font-bold">Copyright @2021</h3>
         <div class="flex justify-center item-center mt-5 font-bold font-lato">
             <h5 class="mr-5">Terms of Use</h5>
@@ -193,6 +195,43 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script type="module">
         import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+
+        const hamburgerBtn = document.getElementById('hamburger')
+        const hamRec = document.querySelector('.ham');
+        const style = document.createElement('style');
+        const mobileMenu = document.querySelector('nav')
+        let isOpen = false;
+
+        
+        const clickHamburger = () => {
+            if(!isOpen){
+                style.innerText = `.ham::before{
+                    transform:rotate(45deg)
+                }
+                .ham::after{
+                    transform:rotate(-45deg)
+                }
+                `
+                hamRec.style.width = '0'
+                mobileMenu.classList.remove('bottom-72')
+                isOpen = true
+            }else{
+                style.innerText = `.ham::before{
+                    
+                }
+                .ham::after{
+                    
+                }
+                `
+                hamRec.style.width = ''
+                mobileMenu.classList.add('bottom-72')
+                isOpen = false
+            }
+        }
+
+        document.body.appendChild(style)
+
+        hamburgerBtn.addEventListener('click',clickHamburger);
 
         let view = 1;
         const queries = {
